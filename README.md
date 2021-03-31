@@ -107,7 +107,8 @@ src
       |__ LandingPage.jsx
       |__ Login.jsx
       |__ Register.jsx
-      |__ LocationsList.jsx
+      |__ LocationList.jsx
+      |__ LocationCard.jsx
       |__ LocationDetails.jsx
       |__ LocationCreate.jsx
 |__ services/
