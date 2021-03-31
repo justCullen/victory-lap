@@ -91,8 +91,6 @@ _The **Victory Lap** MVP allows users to create new destinations that populate a
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
 [Component Tree](https://i.imgur.com/DDhw1bt.png)
 
 #### Component Architecture
