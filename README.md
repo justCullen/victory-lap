@@ -96,9 +96,7 @@ _The **Victory Lap** MVP allows users to create new destinations that populate a
 [Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
+ 
 ``` structure
 
 src
@@ -124,8 +122,6 @@ src
 ```
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested |
 | ------------------- | :------: | :------------: | :-----------: |
