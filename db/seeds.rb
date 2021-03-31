@@ -15,10 +15,10 @@ User.destroy_all
 
 puts "#{User.count} users created!"
 
-@grand = Destination.create!(name: 'Grand Canyon', content: 'Photo by Alan Carrillo on Unsplash', img_url: 'https://i.imgur.com/MCIGrXm.jpg', user_id: @admin)
+@grand = Destination.create!(name: 'Grand Canyon', content: 'Photo by Alan Carrillo on Unsplash', img_url: 'https://i.imgur.com/MCIGrXm.jpg', user: @admin)
 
 puts "#{Destination.count} destinations created!"
 
-Comment.create!(content: "That/'s a big hole in the ground.", user_id: @travel, destination_id: @grand)
+Comment.create!(content: "That/'s a big hole in the ground.", user: @travel, destination: @grand)
 
 puts "#{Comment.count} comments created!"
