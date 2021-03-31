@@ -65,35 +65,35 @@ _The **Victory Lap** MVP allows users to create new destinations that populate a
 
 #### Wireframes
 
-![Dummy Link](url)
+![Desktop Landing](https://i.imgur.com/7rC4Kpj.png)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Desktop Login](https://i.imgur.com/zyaKWnb.png)
 
-- Desktop Hero
+- Desktop Login
 
-![Dummy Link](url)
+![Desktop SignUp](https://i.imgur.com/cpVs0Xw.png)
 
-- Resource Index
+- Desktop SignUp
 
-![Dummy Link](url)
+![Desktop Destinations](https://i.imgur.com/zh7BSn2.png)
 
-- Resource Show
+- Desktop Destinations Main List
 
-![Dummy Link](url)
+![Desktop Destination Details](https://i.imgur.com/06TXxW1.png)
 
-- Tablet Resource Index
+- Desktop Destination Details
 
-![Dummy Link](url)
+![Desktop New Destination](https://i.imgur.com/SvLhZO4.png)
 
-- Mobile Resource Index
+- Desktop New Destination
 
 #### Component Tree
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+[Component Tree](https://i.imgur.com/DDhw1bt.png)
 
 #### Component Architecture
  
@@ -110,7 +110,7 @@ src
       |__ Login.jsx
       |__ Register.jsx
       |__ LocationsList.jsx
-      |__ LocationDetail.jsx
+      |__ LocationDetails.jsx
       |__ LocationCreate.jsx
 |__ services/
       |__ api-config.js
@@ -137,7 +137,7 @@ src
 
 #### ERD Model
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD](https://i.imgur.com/FwQtB4V.png)
 <br>
 
 ***
