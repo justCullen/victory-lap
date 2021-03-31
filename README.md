@@ -91,7 +91,7 @@ _The **Victory Lap** MVP allows users to create new destinations that populate a
 
 #### Component Tree
 
-[Component Tree](https://i.imgur.com/aGJCsZk.png)
+![Component Tree](https://i.imgur.com/aGJCsZk.png)
 
 #### Component Architecture
  
