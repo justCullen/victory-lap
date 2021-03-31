@@ -127,8 +127,9 @@ src
 | Create CRUD Actions |    H     |     8 hrs      |         |
 |        Auth         |    H     |     5 hrs      |         |
 |   Basic Frontend    |    H     |     8 hrs      |         |
-|         CSS         |    H     |     18 hrs     |         |
-| TOTAL               |          |     39 hrs     |         |
+|         CSS         |    H     |    18 hrs      |         |
+|        Debug        |    H     |     5 hrs      |         |
+| TOTAL               |          |    44 hrs      |         |
 
 <br>
 
