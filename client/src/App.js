@@ -56,12 +56,12 @@ function App() {
           </Route>
           <Route path='/register'>
             <Register
-              handleLogin={handleRegister}
+              handleRegister={handleRegister}
             />
           </Route>
-          <Route path='/'>
+          {/* <Route path='/'>
             <MainContainer currentUser={currentUser}/>
-          </Route>
+          </Route> */}
         </Switch>
       </Layout>
     </div>
