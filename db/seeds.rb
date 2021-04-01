@@ -19,6 +19,6 @@ puts "#{User.count} users created!"
 
 puts "#{Destination.count} destinations created!"
 
-Comment.create!(content: "That/'s a big hole in the ground.", user: @travel, destination: @grand)
+Comment.create!(content: "That's a big hole in the ground.", user: @travel, destination: @grand)
 
 puts "#{Comment.count} comments created!"
