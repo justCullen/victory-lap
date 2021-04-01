@@ -17,13 +17,13 @@ export default function Layout(props) {
         }
       </header>
       <hr />
-      {currentUser && (
+      {/* {currentUser && (
         <>
-          {/* <Link to='/foods'>Foods</Link> */}
-          {/* <Link to='/flavors'>Flavors</Link> */}
+          <Link to='/foods'>Foods</Link>
+          <Link to='/flavors'>Flavors</Link>
           <hr/>
         </>
-      )}
+      )} */}
       {props.children}
     </div>
   )

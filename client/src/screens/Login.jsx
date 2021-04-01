@@ -1,13 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Register(props) {
+export default function Login(props) {
   const [formData, setFormData] = useState({
     username: '',
-    email: '',
     password: ''
   })
-  const { username, email, password } = formData;
-  const {handleRegister} = props
+  const { username, password } = formData;
+  const {handleLogin} = props
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,25 +20,15 @@ export default function Register(props) {
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      handleRegister(formData);
+      handleLogin(formData);
     }}>
-      <h3>Register</h3>
+      <h3>Login</h3>
       <label>
         Username:
         <input
           type='text'
           name='username'
           value={username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input
-          type='text'
-          name='email'
-          value={email}
           onChange={handleChange}
         />
       </label>
@@ -53,6 +43,7 @@ export default function Register(props) {
         />
       </label>
       <br/>
+      Not signed up yet? <Link to='/register'>Register</Link>
       <button>Submit</button>
     </form>
   )
