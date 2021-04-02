@@ -10,7 +10,7 @@ class DestinationsController < ApplicationController
 
   # GET /destinations/1
   def show
-    render json: @destination
+    render json: @destination, include: [:user, :comments]
   end
 
   # POST /destinations

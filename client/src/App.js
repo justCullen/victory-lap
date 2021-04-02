@@ -56,7 +56,7 @@ function App() {
           </Route>
           <Route path='/register'>
             <Register
-              handleLogin={handleRegister}
+              handleRegister={handleRegister}
             />
           </Route>
           <Route path='/'>
