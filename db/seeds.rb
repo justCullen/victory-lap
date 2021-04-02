@@ -16,9 +16,16 @@ User.destroy_all
 puts "#{User.count} users created!"
 
 @grand = Destination.create!(name: 'Grand Canyon', content: 'Photo by Alan Carrillo on Unsplash', img_url: 'https://i.imgur.com/MCIGrXm.jpg', user: @admin)
+@eiffel = Destination.create!(name: 'Eiffel Tower', content: 'I want to go to Paris!', img_url: 'https://i.imgur.com/yfAvXQe.jpg', user: @travel)
+@nara = Destination.create!(name: 'Nara, Japan', content: 'See the shrines, feed the deer.', img_url: 'https://i.imgur.com/RzSsPwC.jpg', user: @admin)
+@como = Destination.create!(name: 'Lake Como, Italy', content: 'relax by the lake', img_url: 'https://i.imgur.com/uYOzHrP.jpg', user: @travel)
 
 puts "#{Destination.count} destinations created!"
 
 Comment.create!(content: "That's a big hole in the ground.", user: @travel, destination: @grand)
+Comment.create!(content: 'And baguettes!', user: @admin, destination: @eiffel)
+Comment.create!(content: 'Cute!', user: @travel, destination: @nara)
+Comment.create!(content: 'Ooh, Italy!', user: @admin, destination: @como)
+Comment.create!(content: "Hey I've been there!", user: @travel, destination: @grand)
 
 puts "#{Comment.count} comments created!"
