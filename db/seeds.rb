@@ -26,5 +26,6 @@ Comment.create!(content: "That's a big hole in the ground.", user: @travel, dest
 Comment.create!(content: 'And baguettes!', user: @admin, destination: @eiffel)
 Comment.create!(content: 'Cute!', user: @travel, destination: @nara)
 Comment.create!(content: 'Ooh, Italy!', user: @admin, destination: @como)
+Comment.create!(content: "Hey I've been there!", user: @travel, destination: @grand)
 
 puts "#{Comment.count} comments created!"
