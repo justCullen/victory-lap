@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import DestinationList from '../screens/DestinationList';
 import LandingPage from '../screens/LandingPage';
-import DestinationDetails from '../screens/DestinationDetails'
+import DestinationCreate from '../screens/DestinationCreate';
+import DestinationDetails from '../screens/DestinationDetails';
 import { destroyDestination, getAllDestinations, postDestination, putDestination } from '../services/destinations';
 import { getAllComments } from '../services/comments';
 
@@ -49,11 +50,13 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
-      <Route path='/destinations/:id'>
-        <DestinationDetails
-          // destinations={destinations}
-          // comments={comments}
+      <Route path='/destinations/new'>
+        <DestinationCreate
+          handleCreate={handleCreate}
         />
+      </Route>
+      <Route path='/destinations/:id'>
+        <DestinationDetails />
       </Route>
       <Route path='/'>
       {

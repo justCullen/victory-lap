@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import CommentBox from '../components/CommentBox';
+import CommentBox from '../components/CommentBox/CommentBox';
 import { useParams, Link, useHistory } from "react-router-dom";
 import { getOneDestination } from '../services/destinations';
 import { getAllComments } from '../services/comments';
@@ -28,12 +28,13 @@ export default function DestinationDetails(props) {
     fetchComments();
   }, [id]);
 
+  console.log(destination);
 
   return (
     <div>
       <div>{destination.name}</div>
       <div>{destination.content}</div>
-      <div>{destination.user.username}</div>
+      <div>{destination.user && destination.user.username}</div>
       <img src={destination.img_url} />
       <CommentBox comments={comments} />
     </div>
