@@ -2,10 +2,21 @@ class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
 
   # GET /comments
-  def index
-    @comments = Comment.all
+  # def index
+  #   @comments = Comment.all
 
-    render json: @comments, include: [:user]
+  #   render json: @comments, include: [:user]
+  # end
+
+  def index
+    if params[:destination_id]
+      @destination = Destination.find(params[:destination_id])
+
+      render json: @destination.comments, include: :user
+    else
+    @user = User.all
+    render json: @user, include: :comments
+    end
   end
 
   # GET /comments/1

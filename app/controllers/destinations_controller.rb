@@ -1,4 +1,5 @@
 class DestinationsController < ApplicationController
+  before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_destination, only: [:show, :update, :destroy]
 
   # GET /destinations
@@ -16,6 +17,7 @@ class DestinationsController < ApplicationController
   # POST /destinations
   def create
     @destination = Destination.new(destination_params)
+    @destination.user = @current_user
 
     if @destination.save
       render json: @destination, status: :created, location: @destination

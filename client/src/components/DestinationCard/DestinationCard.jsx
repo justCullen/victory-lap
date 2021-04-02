@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './DestinationCard.css';
 
 export default function DestinationCard(props) {
   const { id, name, imgURL, content, user, comments } = props;
