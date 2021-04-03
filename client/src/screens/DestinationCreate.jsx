@@ -2,7 +2,9 @@ import {useState} from 'react'
 
 export default function DestinationCreate(props) {
   const [ formData, setFormData ] = useState({
-    name: ''
+    name: '',
+    content: '',
+    img_url: ''
     })
     
     const { name, content, img_url } = formData;
