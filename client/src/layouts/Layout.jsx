@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Layout.css';
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;

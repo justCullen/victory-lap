@@ -15,9 +15,6 @@ export default function DestinationList(props) {
           id={destination.id}
           name={destination.name}
           imgURL={destination.img_url}
-          // content={destination.content}
-          // user={destination.user.username}
-          // comments={destination.comments}
         />
         ))}
     </div>

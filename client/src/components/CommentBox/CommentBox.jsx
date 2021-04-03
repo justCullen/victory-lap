@@ -7,7 +7,7 @@ export default function CommentBox(props) {
     name: '',
     content: ''
   })
-  const { name, content, img_url } = formData;
+  const { content } = formData;
   const { comments, handleCreateComment } = props;
   const { id } = useParams();
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './DestinationCard.css';
 
 export default function DestinationCard(props) {
-  const { id, name, imgURL, content, user, comments } = props;
+  const { id, name, imgURL } = props;
   return (
     <div className='dest-card'>
       <div className='dest-image-cont'>

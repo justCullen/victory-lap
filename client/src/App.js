@@ -6,8 +6,8 @@ import './App.css';
 import MainContainer from './containers/MainContainer';
 // component imports
 import Layout from './layouts/Layout';
-import Login from './screens/Login';
-import Register from './screens/Register';
+import Login from './screens/Login/Login';
+import Register from './screens/Register/Register';
 // function imports
 import {loginUser, registerUser, removeToken, verifyUser} from './services/auth'
 
