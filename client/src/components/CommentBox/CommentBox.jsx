@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import { useParams } from 'react-router-dom';
 import './CommentBox.css';
 
 export default function CommentBox(props) {
   const [ formData, setFormData ] = useState({
-    name: ''
+    name: '',
+    content: ''
   })
   const { name, content, img_url } = formData;
   const { comments, handleCreateComment } = props;
+  const { id } = useParams();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +23,7 @@ export default function CommentBox(props) {
     <div>
       <form onSubmit={(e) => {
         e.preventDefault();
-        handleCreateComment(formData)
+        handleCreateComment({ ...formData, destination_id: id })
       }}>
           <input
             type='text'
