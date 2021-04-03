@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory, useParams } from 'react-router-dom';
-import DestinationList from '../screens/DestinationList';
+import DestinationList from '../screens/DestinationList/DestinationList';
 import LandingPage from '../screens/LandingPage';
 import DestinationCreate from '../screens/DestinationCreate';
 import DestinationDetails from '../screens/DestinationDetails/DestinationDetails';
