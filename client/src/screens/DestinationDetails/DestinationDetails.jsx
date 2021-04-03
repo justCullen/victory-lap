@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import CommentBox from '../components/CommentBox/CommentBox';
+import CommentBox from '../../components/CommentBox/CommentBox';
 import { useParams, Link, useHistory } from "react-router-dom";
-import { getOneDestination } from '../services/destinations';
-import { getAllComments } from '../services/comments';
+import { getOneDestination } from '../../services/destinations';
+import { getAllComments, postComment } from '../../services/comments';
 
 export default function DestinationDetails(props) {
   const [destination, setDestination] = useState([]);
   const [comments, setComments] = useState([]);
+  // const { handleCreateComment } = props;
   const { id } = useParams();
+  const history = useHistory();
   // const { destinations, comments } = props;
 
   useEffect(() => {
@@ -28,15 +30,19 @@ export default function DestinationDetails(props) {
     fetchComments();
   }, [id]);
 
-  console.log(destination);
+  const handleCreateComment = async (commentData, id) => {
+    const newComment = await postComment(commentData, id);
+    setComments(prevState => [...prevState, newComment])
+    history.push(`/destinations/${id}`);
+  }
 
   return (
-    <div>
+    <div className='destination-detail'>
       <div>{destination.name}</div>
       <div>{destination.content}</div>
       <div>{destination.user && destination.user.username}</div>
       <img src={destination.img_url} />
-      <CommentBox comments={comments} />
+      <CommentBox comments={comments} handleCreateComment={handleCreateComment}/>
     </div>
   )
 }

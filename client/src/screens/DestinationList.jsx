@@ -8,8 +8,9 @@ export default function DestinationList(props) {
     <div>
       <h3>DestinationList</h3>
       <Link to='destinations/new'><button>Add a Destination</button></Link>
-      {destinations.map(destination => (
+      {destinations.map((destination, index) => (
         <DestinationCard
+          key={index}
           id={destination.id}
           name={destination.name}
           imgURL={destination.img_url}
