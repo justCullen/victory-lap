@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import DestinationCard from '../components/DestinationCard/DestinationCard';
+import DestinationCard from '../../components/DestinationCard/DestinationCard';
+import './DestinationList.css'
 
 export default function DestinationList(props) {
   const { destinations } = props;

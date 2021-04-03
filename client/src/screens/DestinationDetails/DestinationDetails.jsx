@@ -3,6 +3,7 @@ import CommentBox from '../../components/CommentBox/CommentBox';
 import { useParams, Link, useHistory } from "react-router-dom";
 import { getOneDestination } from '../../services/destinations';
 import { getAllComments, postComment } from '../../services/comments';
+import './DestinationDetails.css';
 
 export default function DestinationDetails(props) {
   const [destination, setDestination] = useState([]);
