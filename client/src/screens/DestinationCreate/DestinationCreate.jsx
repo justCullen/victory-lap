@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import './DestinationCreate.css';
 
 export default function DestinationCreate(props) {
   const [ formData, setFormData ] = useState({

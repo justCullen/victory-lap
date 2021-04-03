@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, useHistory, useParams } from 'react-router-dom';
+import { Switch, Route, useHistory } from 'react-router-dom';
 import DestinationList from '../screens/DestinationList/DestinationList';
-import LandingPage from '../screens/LandingPage';
-import DestinationCreate from '../screens/DestinationCreate';
+import LandingPage from '../screens/LandingPage/LandingPage';
+import DestinationCreate from '../screens/DestinationCreate/DestinationCreate';
 import DestinationDetails from '../screens/DestinationDetails/DestinationDetails';
+import DestinationEdit from '../screens/DestinationEdit/DestinationEdit';
 import { destroyDestination, getAllDestinations, postDestination, putDestination } from '../services/destinations';
 
 export default function MainContainer(props) {
   const [destinations, setDestinations] = useState([]);
-  const [comments, setComments] = useState([]);
+  // const [comments, setComments] = useState([]);
   const history = useHistory();
-  const { id } = useParams();
+  // const { id } = useParams();
   const { currentUser } = props;
 
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function MainContainer(props) {
   const handleDelete = async (id) => {
     await destroyDestination(id);
     setDestinations(prevState => prevState.filter(destination => destination.id !== id))
+    history.push('/destinations');
   }
 
   return (
@@ -47,8 +49,14 @@ export default function MainContainer(props) {
           handleCreate={handleCreate}
         />
       </Route>
+      <Route path='/destinations/:id/edit'>
+        <DestinationEdit
+          destinations={destinations}
+          handleUpdate={handleUpdate}
+        />
+      </Route>
       <Route path='/destinations/:id'>
-        <DestinationDetails />
+        <DestinationDetails handleDelete={handleDelete} currentUser={currentUser}/>
       </Route>
       <Route path='/'>
       {
