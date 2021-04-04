@@ -1,0 +1,25 @@
+.layout-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /* align-content: space-around; */
+  background-color: lightblue;
+  height: 8vh;
+}
+.layout-header a {
+  text-decoration: none;
+  font-size: 40px;
+}
+
+
+/* .layout-title {
+  border: solid 1px black;
+}
+
+.username {
+  border: solid 1px black;
+}
+
+.layout-button {
+  border: solid 1px black;
+} */
