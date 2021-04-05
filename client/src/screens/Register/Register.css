@@ -1,0 +1,74 @@
+.login-register-form {
+  padding-top: 5vh;
+  background-color: lightblue;
+  min-height: 100vh;
+}
+
+.register-label {
+  font-size: 28px;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_register_form.asp */
+/* Full-width input fields */
+label input[type=text], input[type=password] {
+  width: 50vw;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+label input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* bestcssbuttongenerator.com */
+.submit-btn {
+  box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+  /* margin-right: -12vw; */
+  height: 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+/* bestcssbuttongenerator.com */
+.submit-btn:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+/* bestcssbuttongenerator.com */
+.submit-btn:active {
+	position:relative;
+	top:1px;
+}
+
+label div {
+  padding-right: 40vw;
+  font-size: 20px;
+}
+
+.sign-up-cta {
+  padding-top: 2vh;
+  text-decoration: none;
+}

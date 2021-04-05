@@ -6,17 +6,18 @@ import './DestinationList.css'
 export default function DestinationList(props) {
   const { destinations } = props;
   return (
-    <div>
-      <h3>DestinationList</h3>
-      <Link to='destinations/new'><button>Add a Destination</button></Link>
-      {destinations.map((destination, index) => (
-        <DestinationCard
-          key={index}
-          id={destination.id}
-          name={destination.name}
-          imgURL={destination.img_url}
-        />
+    <div className='destination-list-container'>
+      <Link to='destinations/new'><button className='add-dest-button'>Add a Destination</button></Link>
+      <div className='cards-container'>
+        {destinations.map((destination, index) => (
+          <DestinationCard
+            key={index}
+            id={destination.id}
+            name={destination.name}
+            imgURL={destination.img_url}
+          />
         ))}
+      </div>
     </div>
   )
 }

@@ -1,0 +1,75 @@
+.layout-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /* align-content: space-around; */
+  background-color: lightblue;
+  min-height: 8vh;
+  padding-top: 15px;
+  padding-left: 30vw;
+  position: relative;
+  /* vertical-align: auto; */
+}
+
+.layout-header a {
+  text-decoration: none;
+  font-size: 40px;
+  /* vertical-align: auto; */
+}
+/* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.username {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 5vw;
+}
+/* bestcssbuttongenerator.com */
+.layout-button,
+.login-register {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+  /* margin-right: -12vw; */
+  height: 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+  /* vertical-align: auto; */
+}
+/* bestcssbuttongenerator.com */
+.layout-button:hover,
+.login-register:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+/* bestcssbuttongenerator.com */
+.layout-button:active,
+.login-register:active {
+	position:relative;
+	top:1px;
+}
+
+.username {
+  font-size: 20px;
+}
+
+/* .layout-title {
+  border: solid 1px black;
+}
+
+.username {
+  border: solid 1px black;
+}
+
+.layout-button {
+  border: solid 1px black;
+} */
