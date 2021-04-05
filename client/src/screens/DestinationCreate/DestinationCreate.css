@@ -1,5 +1,7 @@
 .create-form {
   padding-top: 5vh;
+  background-image: url('https://i.imgur.com/sza67KY.jpg');
+  background-position: center;
   background-color: lightblue;
   min-height: 100vh;
 }
@@ -34,9 +36,9 @@ hr {
 
 /* bestcssbuttongenerator.com */
 .submit-btn {
-	background-color:#2dabf9;
+	background-color:#755A6C;
 	border-radius:3px;
-	border:1px solid #0b0e07;
+	border:1px solid #1C1E29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -47,7 +49,7 @@ hr {
   height: 45px;
 }
 .submit-btn:hover {
-	background-color:#0688fa;
+	background-color:#4C9196;
 }
 .submit-btn:active {
 	position:relative;

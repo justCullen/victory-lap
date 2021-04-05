@@ -23,7 +23,7 @@
   text-align: left;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  background-color: whitesmoke;
+  background-color: #f5f4f5;
   border-radius: 3px;
 }
 
@@ -54,9 +54,9 @@
 }
 /* bestcssbuttongenerator.com */
 .comment-btn {
-	background-color:#2dabf9;
+	background-color:#755A6C;
 	border-radius:3px;
-	border:1px solid #0b0e07;
+	border:1px solid #1C1E29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -67,7 +67,7 @@
   height: 45px;
 }
 .comment-btn:hover {
-	background-color:#0688fa;
+	background-color:#4C9196;
 }
 .comment-btn:active {
 	position:relative;

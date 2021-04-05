@@ -3,7 +3,7 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   /* align-content: space-around; */
-  background-color: lightblue;
+  background-color: #f5f4f5;
   min-height: 8vh;
   padding-top: 15px;
   padding-left: 30vw;
@@ -11,13 +11,19 @@
   /* vertical-align: auto; */
 }
 
+.layout-title {
+  color: #4C9196;
+  padding-left: 2vw;
+  font-family: 'Roboto', sans-serif;
+}
+
 .layout-header a {
   text-decoration: none;
   font-size: 40px;
-  /* vertical-align: auto; */
 }
 /* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 .username {
+  color: #4C9196;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -29,9 +35,9 @@
 /* bestcssbuttongenerator.com */
 .layout-button,
 .login-register {
-	background-color:#2dabf9;
+	background-color:#755A6C;
 	border-radius:3px;
-	border:1px solid #0b0e07;
+	border:1px solid #1C1E29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -40,10 +46,11 @@
 	padding:9px 23px;
 	text-decoration:none;
   height: 45px;
+  margin-bottom: 1vw;
 }
 .layout-button:hover,
 .login-register:hover {
-	background-color:#0688fa;
+	background-color:#4C9196;
 }
 .layout-button:active,
 .login-register:active {
