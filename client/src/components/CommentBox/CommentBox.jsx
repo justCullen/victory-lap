@@ -20,7 +20,13 @@ export default function CommentBox(props) {
   }
 
   return (
-    <div>
+    <div className='comment-box'>
+      {comments.map((comment, index) => (
+        <div key={index}>
+          <div>{comment.user.username}</div>
+          <div>{comment.content}</div>
+        </div>
+      ))}
       <form onSubmit={(e) => {
         e.preventDefault();
         handleCreateComment({ ...formData, destination_id: id })
@@ -33,12 +39,6 @@ export default function CommentBox(props) {
           />
         <button>Add Comment</button>
         </form>
-      {comments.map((comment, index) => (
-        <div key={index}>
-          <div>{comment.user.username}</div>
-          <div>{comment.content}</div>
-        </div>
-      ))}
     </div>
   )
 }
