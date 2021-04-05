@@ -17,7 +17,7 @@ export default function Layout(props) {
             <Link to='/login'><button className='login-register'>Login/Register</button></Link>
         }
       </header>
-      {/* <hr /> */}
+      {/* <br /> */}
       {props.children}
     </div>
   )

@@ -1,4 +1,25 @@
-.destination-detail img {
-  width: 50%;
+.destination-detail {
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-evenly; */
+  background-color: lightblue;
+  height: 100vh;
+  padding-left: 20vw;
+}
+
+.dest-img {
+  width: 30vw;
   height: auto;
+}
+
+.destination-info {
+  padding-top: 10vh;
+  max-height: 100vh;
+  max-width: 40vw;
+}
+
+.comment-box-container {
+  padding-top: 10vh;
+  max-height: 100vh;
+  max-width: 40vw;
 }
