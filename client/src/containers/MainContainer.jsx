@@ -9,9 +9,7 @@ import { destroyDestination, getAllDestinations, postDestination, putDestination
 
 export default function MainContainer(props) {
   const [destinations, setDestinations] = useState([]);
-  // const [comments, setComments] = useState([]);
   const history = useHistory();
-  // const { id } = useParams();
   const { currentUser } = props;
 
   useEffect(() => {

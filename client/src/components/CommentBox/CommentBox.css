@@ -1,17 +1,22 @@
 .comment-box {
   display: flex;
   flex-direction: column-reverse;
-  min-height: 50vh;
+  min-height: 40vh;
+  max-height: 40vh;
+  /* height: 50vh; */
   align-content: flex-end;
   /* border: solid black 2px; */
   margin-bottom: 50vh;
   padding-left: 2vw;
+  padding-top: 10vh;
 }
 
 .comment-comments {
   display: flex;
   flex-direction: column;
   padding-bottom: 1vh;
+  overflow: auto;
+  /* overscroll-behavior-y: contain; */
 }
 
 .com-bundle {
