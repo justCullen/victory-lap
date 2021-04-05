@@ -1,6 +1,31 @@
 .comment-box {
   display: flex;
-  flex-direction: column;
-  height: 50vh;
+  flex-direction: column-reverse;
+  min-height: 50vh;
   align-content: flex-end;
+  /* border: solid black 2px; */
+  margin-bottom: 50vh;
+  padding-left: 2vw;
+}
+
+.comment-comments {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vh;
+}
+
+.com-bundle {
+  text-align: left;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  background-color: whitesmoke;
+  border-radius: 3px;
+}
+
+.com-name {
+  font-size: 14px;
+}
+
+.com-content {
+  font-size: 18px;
 }
