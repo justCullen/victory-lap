@@ -23,3 +23,27 @@
   max-height: 100vh;
   max-width: 40vw;
 }
+/* bestcssbuttongenerator.com */
+.edit-btn,
+.delete-btn {
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+  height: 45px;
+}
+.edit-btn:hover,
+.delete-btn:hover {
+	background-color:#0688fa;
+}
+.edit-btn:active,
+.delete-btn:active {
+	position:relative;
+	top:1px;
+}
