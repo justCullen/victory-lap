@@ -4,8 +4,9 @@
   justify-content: space-around;
   /* align-content: space-around; */
   background-color: lightblue;
-  height: 8vh;
+  min-height: 8vh;
   padding-top: 15px;
+  padding-left: 30vw;
   position: relative;
   /* vertical-align: auto; */
 }
@@ -22,9 +23,11 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  margin-left: 5vw;
 }
 
-.layout-button {
+.layout-button,
+.login-register {
 	box-shadow: 3px 4px 0px 0px #899599;
 	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
 	background-color:#ededed;
@@ -36,22 +39,28 @@
 	font-family:Arial;
 	font-size:17px;
 	padding:7px 25px;
+  /* margin-right: -12vw; */
   height: 35px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
   /* vertical-align: auto; */
 }
 
-.layout-button:hover {
+.layout-button:hover,
+.login-register:hover {
 	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
 	background-color:#bab1ba;
 }
 
-.layout-button:active {
+.layout-button:active,
+.login-register:active {
 	position:relative;
 	top:1px;
 }
 
+.username {
+  font-size: 20px;
+}
 
 /* .layout-title {
   border: solid 1px black;
