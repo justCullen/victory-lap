@@ -21,7 +21,7 @@ export default function CommentBox(props) {
 
   return (
     <div className='comment-box'>
-      <form onSubmit={(e) => {
+      <form className='comment-form 'onSubmit={(e) => {
         e.preventDefault();
         handleCreateComment({ ...formData, destination_id: id })
       }}>
@@ -31,7 +31,7 @@ export default function CommentBox(props) {
             value={content}
             onChange={handleChange}
           />
-        <button>Add Comment</button>
+        <button className='comment-btn'>Comment</button>
         </form>
       <div className='comment-comments'>
       {comments.map((comment, index) => (

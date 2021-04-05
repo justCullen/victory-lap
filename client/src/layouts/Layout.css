@@ -25,33 +25,26 @@
   transform: translateY(-50%);
   margin-left: 5vw;
 }
+
 /* bestcssbuttongenerator.com */
 .layout-button,
 .login-register {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color:#ededed;
-	border-radius:15px;
-	border:1px solid #d6bcd6;
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
 	display:inline-block;
 	cursor:pointer;
-	color:#3a8a9e;
+	color:#ffffff;
 	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-  /* margin-right: -12vw; */
-  height: 35px;
+	font-size:15px;
+	padding:9px 23px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
-  /* vertical-align: auto; */
+  height: 45px;
 }
-/* bestcssbuttongenerator.com */
 .layout-button:hover,
 .login-register:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
+	background-color:#0688fa;
 }
-/* bestcssbuttongenerator.com */
 .layout-button:active,
 .login-register:active {
 	position:relative;

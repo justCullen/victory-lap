@@ -47,9 +47,9 @@ export default function DestinationDetails(props) {
         {currentUser?.id === destination.user_id && (
           <>
             <Link to={`/destinations/${id}/edit`}>
-              <button>Edit</button>
+              <button className='edit-btn'>Edit</button>
             </Link>
-            <button onClick={() => handleDelete(destination.id)}>Delete</button>
+            <button className='delete-btn'onClick={() => handleDelete(destination.id)}>Delete</button>
           </>
         )}
       </div>

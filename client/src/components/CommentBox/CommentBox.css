@@ -29,3 +29,42 @@
 .com-content {
   font-size: 18px;
 }
+
+/* https://www.w3schools.com/howto/howto_css_register_form.asp */
+/* Half-width input fields */
+.comment-form input[type=text], input[type=password] {
+  width: 20vw;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.comment-form input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.comment-btn {
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+  height: 45px;
+}
+.comment-btn:hover {
+	background-color:#0688fa;
+}
+.comment-btn:active {
+	position:relative;
+	top:1px;
+}
+
+        
