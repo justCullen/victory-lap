@@ -37,13 +37,15 @@ export default function DestinationEdit(props) {
   }
   
     return (
-      <form onSubmit={(e) => {
+      <form className='edit-form' onSubmit={(e) => {
         e.preventDefault();
         handleUpdate(id, formData)
       }}>
-        <h3>Edit Destination</h3>
+        <div className='edit-box'>
+        <div className='edit-label'>Edit Destination</div>
         <label>
-          Location:
+          <div>Location</div>
+          <br/>
           <input
             type='text'
             name='name'
@@ -53,7 +55,8 @@ export default function DestinationEdit(props) {
         </label>
         <br/>
         <label>
-          Info:
+          <div>Info</div>
+          <br/>
           <input
             type='text'
             name='content'
@@ -63,7 +66,8 @@ export default function DestinationEdit(props) {
         </label>
         <br/>
         <label>
-          Image URL:
+          <div>Image URL</div>
+          <br/>
           <input
             type='text'
             name='img_url'
@@ -72,7 +76,8 @@ export default function DestinationEdit(props) {
           />
         </label>
         <br/>
-      <button>Submit</button>
+          <button className='submit-btn'>Submit</button>
+          </div>
       </form>
     )
   }

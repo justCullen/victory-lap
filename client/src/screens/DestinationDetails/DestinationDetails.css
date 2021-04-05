@@ -8,11 +8,23 @@
 }
 
 .dest-img {
+  padding-top: 7vh;
   width: 30vw;
   height: auto;
 }
 
-.destination-info {
+.dest-info {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+
+.dest-info div {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.destination-box {
   padding-top: 10vh;
   max-height: 100vh;
   max-width: 40vw;

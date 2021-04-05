@@ -23,7 +23,7 @@ export default function CommentBox(props) {
     <div className='comment-box'>
       <form className='comment-form 'onSubmit={(e) => {
         e.preventDefault();
-        handleCreateComment({ ...formData, destination_id: id })
+        handleCreateComment({ ...formData, destination_id: id });
       }}>
           <input
             type='text'
