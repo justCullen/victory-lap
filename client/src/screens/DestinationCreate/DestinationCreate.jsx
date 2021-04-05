@@ -20,13 +20,15 @@ export default function DestinationCreate(props) {
     }
   
     return (
-      <form onSubmit={(e) => {
+      <form className='create-form' onSubmit={(e) => {
         e.preventDefault();
         handleCreate(formData)
       }}>
-        <h3>Create Destination</h3>
+        <div className='create-box'>
+        <div className='create-label'>Create Destination</div>
         <label>
-          Location:
+            <div>Location</div>
+            <br/>
           <input
             type='text'
             name='name'
@@ -36,7 +38,8 @@ export default function DestinationCreate(props) {
         </label>
         <br/>
         <label>
-          Info:
+            <div>Info</div>
+            <br/>
           <input
             type='text'
             name='content'
@@ -46,7 +49,8 @@ export default function DestinationCreate(props) {
         </label>
         <br/>
         <label>
-          Image URL:
+            <div>Image URL</div>
+            <br/>
           <input
             type='text'
             name='img_url'
@@ -55,7 +59,8 @@ export default function DestinationCreate(props) {
           />
         </label>
         <br/>
-      <button>Submit</button>
+        <button className='submit-btn'>Submit</button>
+        </div>
       </form>
     )
   }
