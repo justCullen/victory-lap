@@ -8,10 +8,6 @@
   font-size: 28px;
 }
 
-.container {
-  padding: 16px;
-}
-
 /* https://www.w3schools.com/howto/howto_css_register_form.asp */
 /* Full-width input fields */
 label input[type=text], input[type=password] {

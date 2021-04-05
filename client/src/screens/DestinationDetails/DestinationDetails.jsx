@@ -34,22 +34,29 @@ export default function DestinationDetails(props) {
 
   return (
     <div className="destination-detail">
-      <div className="destination-info">
+      <div className="destination-box">
         <img
           className="dest-img"
           src={destination.img_url}
           alt={destination.name}
         />
-        <div>{destination.name}</div>
-        <div>{destination.content}</div>
-        <div>{destination.user && destination.user.username}</div>
+        <div className='dest-info'>
+          <div>{destination.name}</div>
+          <div>{destination.content}</div>
+          <div>by {destination.user && destination.user.username}</div>
+        </div>
         <br />
         {currentUser?.id === destination.user_id && (
           <>
             <Link to={`/destinations/${id}/edit`}>
-              <button className='edit-btn'>Edit</button>
+              <button className="edit-btn">Edit</button>
             </Link>
-            <button className='delete-btn'onClick={() => handleDelete(destination.id)}>Delete</button>
+            <button
+              className="delete-btn"
+              onClick={() => handleDelete(destination.id)}
+            >
+              Delete
+            </button>
           </>
         )}
       </div>
