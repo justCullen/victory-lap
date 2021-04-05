@@ -1,0 +1,68 @@
+.layout-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /* align-content: space-around; */
+  background-color: lightblue;
+  min-height: 8vh;
+  padding-top: 15px;
+  padding-left: 30vw;
+  position: relative;
+  /* vertical-align: auto; */
+}
+
+.layout-header a {
+  text-decoration: none;
+  font-size: 40px;
+  /* vertical-align: auto; */
+}
+/* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.username {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 5vw;
+}
+
+/* bestcssbuttongenerator.com */
+.layout-button,
+.login-register {
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+  height: 45px;
+}
+.layout-button:hover,
+.login-register:hover {
+	background-color:#0688fa;
+}
+.layout-button:active,
+.login-register:active {
+	position:relative;
+	top:1px;
+}
+
+.username {
+  font-size: 20px;
+}
+
+/* .layout-title {
+  border: solid 1px black;
+}
+
+.username {
+  border: solid 1px black;
+}
+
+.layout-button {
+  border: solid 1px black;
+} */
