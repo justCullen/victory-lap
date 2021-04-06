@@ -65,3 +65,59 @@
 	position:relative;
 	top:1px;
 }
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  .destination-detail {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url('https://i.imgur.com/sza67KY.jpg');
+    background-position: center;
+    background-color: #f5f4f5;
+    height: 100vh;
+    padding-left: 20vw;
+  }
+  .destination-box {
+    padding-top: 2vh;
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+  .dest-img {
+    padding-top: 7vh;
+    width: 60vw;
+    height: auto;
+  }
+  .comment-box-container {
+    padding-top: 0vh;
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .destination-detail {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url('https://i.imgur.com/sza67KY.jpg');
+    background-position: center;
+    background-color: #f5f4f5;
+    height: 100vh;
+    padding-left: 16vw;
+  }
+  .destination-box {
+    padding-top: 2vh;
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+  .dest-img {
+    padding-top: 7vh;
+    width: 70vw;
+    height: auto;
+  }
+  .comment-box-container {
+    padding-top: 0vh;
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+}

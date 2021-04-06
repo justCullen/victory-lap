@@ -39,3 +39,17 @@
 	position:relative;
 	top:1px;
 }
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  .cards-container {
+    flex-flow: column nowrap;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .cards-container {
+    flex-flow: column nowrap;
+  }
+}

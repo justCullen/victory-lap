@@ -63,14 +63,17 @@
 }
 
 /* mobile */
-@media screen and (min-width: 426px) {
+@media screen and (max-width: 426px) {
   .username {
     display: none;
   }
+  .layout-title {
+    margin-left: -20vw;
+  }
 }
 
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* tablet */
+@media screen and (max-width: 769px) {
   .username {
     display: none;
   }
