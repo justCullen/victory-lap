@@ -1,8 +1,9 @@
 .destination-detail {
   display: flex;
   flex-flow: row nowrap;
-  /* justify-content: space-evenly; */
-  background-color: lightblue;
+  background-image: url('https://i.imgur.com/sza67KY.jpg');
+  background-position: center;
+  background-color: #f5f4f5;
   height: 100vh;
   padding-left: 20vw;
 }
@@ -35,12 +36,17 @@
   max-height: 100vh;
   max-width: 40vw;
 }
+
+.edit-btn,
+.delete-btn {
+  margin: 0 1vw;
+}
 /* bestcssbuttongenerator.com */
 .edit-btn,
 .delete-btn {
-	background-color:#2dabf9;
+	background-color:#755A6C;
 	border-radius:3px;
-	border:1px solid #0b0e07;
+	border:1px solid #1C1E29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -52,10 +58,66 @@
 }
 .edit-btn:hover,
 .delete-btn:hover {
-	background-color:#0688fa;
+	background-color:#4C9196;
 }
 .edit-btn:active,
 .delete-btn:active {
 	position:relative;
 	top:1px;
+}
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  .destination-detail {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url('https://i.imgur.com/sza67KY.jpg');
+    background-position: center;
+    background-color: #f5f4f5;
+    height: 100vh;
+    padding-left: 20vw;
+  }
+  .destination-box {
+    padding-top: 2vh;
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+  .dest-img {
+    padding-top: 7vh;
+    width: 60vw;
+    height: auto;
+  }
+  .comment-box-container {
+    padding-top: 0vh;
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .destination-detail {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url('https://i.imgur.com/sza67KY.jpg');
+    background-position: center;
+    background-color: #f5f4f5;
+    height: 100vh;
+    padding-left: 16vw;
+  }
+  .destination-box {
+    padding-top: 2vh;
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+  .dest-img {
+    padding-top: 7vh;
+    width: 70vw;
+    height: auto;
+  }
+  .comment-box-container {
+    padding-top: 0vh;
+    max-height: 100vh;
+    max-width: 70vw;
+  }
 }

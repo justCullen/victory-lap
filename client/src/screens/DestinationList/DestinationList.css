@@ -12,14 +12,17 @@
 
 .destination-list-container {
   padding-top: 5vh;
-  background-color: lightblue;
+  background-image: url('https://i.imgur.com/sza67KY.jpg');
+  background-position: center;
+  background-color: #f5f4f5;
+  min-height: 100vh;
 }
 
 /* bestcssbuttongenerator.com */
 .add-dest-button {
-	background-color:#2dabf9;
+	background-color:#755A6C;
 	border-radius:3px;
-	border:1px solid #0b0e07;
+	border:1px solid #1C1E29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -30,9 +33,23 @@
   height: 45px;
 }
 .add-dest-button:hover {
-	background-color:#0688fa;
+	background-color:#4C9196;
 }
 .add-dest-button:active {
 	position:relative;
 	top:1px;
+}
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  .cards-container {
+    flex-flow: column nowrap;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .cards-container {
+    flex-flow: column nowrap;
+  }
 }

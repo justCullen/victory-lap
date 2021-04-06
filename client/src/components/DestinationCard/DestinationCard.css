@@ -6,3 +6,17 @@
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
+
+/* mobile */
+@media screen and (max-width: 426px) {
+  .dest-card img {
+    max-width: 60vw;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .dest-card img {
+    max-width: 60vw;
+  }
+}
