@@ -62,14 +62,16 @@
   font-size: 20px;
 }
 
-/* .layout-title {
-  border: solid 1px black;
+/* mobile */
+@media screen and (min-width: 426px) {
+  .username {
+    display: none;
+  }
 }
 
-.username {
-  border: solid 1px black;
-}
 
-.layout-button {
-  border: solid 1px black;
-} */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .username {
+    display: none;
+  }
+}

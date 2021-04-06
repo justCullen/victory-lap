@@ -15,6 +15,7 @@
   background-image: url('https://i.imgur.com/sza67KY.jpg');
   background-position: center;
   background-color: #f5f4f5;
+  min-height: 100vh;
 }
 
 /* bestcssbuttongenerator.com */
