@@ -71,7 +71,6 @@
   .destination-detail {
     display: flex;
     flex-flow: column nowrap;
-    background-image: url('https://i.imgur.com/sza67KY.jpg');
     background-position: center;
     background-color: #f5f4f5;
     height: 100vh;
@@ -99,7 +98,6 @@
   .destination-detail {
     display: flex;
     flex-flow: column nowrap;
-    background-image: url('https://i.imgur.com/sza67KY.jpg');
     background-position: center;
     background-color: #f5f4f5;
     height: 100vh;
