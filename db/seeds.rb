@@ -27,7 +27,7 @@ puts "#{User.count} users created!"
 @bruges = Destination.create!(name: 'Bruges, Belgium', content: 'Such a beautiful city, and so much history!', img_url: 'https://i.imgur.com/OYqyE1H.jpg', user: @cullen)
 @louvre = Destination.create!(name: 'The Louvre', content: 'The museum to end all museums', img_url: 'https://i.imgur.com/MI29Mio.jpg', user: @travel)
 @viet = Destination.create!(name: 'Vietnam', content: 'Great food, great people', img_url: 'https://i.imgur.com/iXhwmDl.jpg', user: @road)
-@romania = Destination.create!(name: 'Romania', content: 'Gorgeous countryside', img_url: 'https://i.imgur.com/iXhwmDl.jpg', user: @fly)
+@romania = Destination.create!(name: 'Romania', content: 'Gorgeous countryside', img_url: 'https://i.imgur.com/3zrbvsx.jpg', user: @fly)
 
 puts "#{Destination.count} destinations created!"
 
